@@ -1,0 +1,68 @@
+Practical Exercise - Walkthrough
+The first step is implementing the two Input Dialogue activities to prompt the user for the text and title of the file.
+Find and add two Input Dialog activities into the main sequence
+
+For the first one:
+
+Enter ‘Input Text’ as the title of the prompt.
+
+Enter ‘Enter notepad text:’ as the label.
+
+Create a string or generic variable called text and enter it as the output parameter.
+
+For the second one:
+
+Enter ‘Input Title’ as the title of the prompt
+
+Enter ‘Enter notepad title:’ as the label.
+
+Create a string or generic variable called title and enter it as the output parameter.
+ 
+
+This is how the workflow should look like:
+
+
+The rest of the automation can be easily done using the built-in recording tool.
+
+Open an instance of Notepad.exe.
+
+In the Design tab, select Recording > Desktop.
+
+Desktop recording is chosen as it is the most suitable for recording multiple actions in desktop applications.
+
+Click Start App and click on the Notepad.exe instance you opened.
+
+Click Automatic Recorder - You are now in recording mode.
+
+Click the editable panel in Notepad.
+
+Type text and press enter to record it.
+
+Click on Format. You will see a pop up message about using an anchor. Check the box that says “Do not show again during this recording session” and Click No.
+In the Format menu, click Font. The Font window is displayed.
+
+In the Font style list box, click Bold.
+
+In Size list box, click 16.
+
+Click OK.
+
+In the File menu, click Save As. The Save As window is displayed.
+
+In the File Name text box, type in ‘title’ and press Enter to record it.
+
+Click the ‘Save’ button.
+
+Press the Esc key to exit the automatic recorder.
+
+Click on the Save & Exit button.
+
+Navigate inside the recorded sequence in Studio and replace the ‘text’ string with the text variable and the ‘title’ string with the title variable:
+
+In the Type Into activity right after Open Notepad.exe.
+
+In the Type Into activity, inside the Attach to Save as Dialog.
+
+
+When compressed, this is how the automation should look like. Take note of how the recording tool drastically simplifies the otherwise complex process of automating Notepad.
+
